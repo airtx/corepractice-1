@@ -15,7 +15,6 @@ namespace corepractice.Models
         [Required]
         public string GroupName { get; set; }
         [StringLength(256)]
-        [Required]
         public string Description { get; set; }
     }
 }

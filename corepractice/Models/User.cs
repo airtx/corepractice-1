@@ -27,12 +27,12 @@ namespace corepractice.Models
         [StringLength(100)]
         [Required]
         [Display(Name = "Last Name")]
-        public string LastName { get; set; }
+        public string Lastname { get; set; }
 
         [StringLength(100)]
         [Required]
         [Display(Name = "First Name")]
-        public string FirstName { get; set; }
+        public string Firstname { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]

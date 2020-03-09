@@ -19,8 +19,14 @@ namespace corepractice.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().ToTable("User").HasKey(e => e.UserId);
-            modelBuilder.Entity<Group>().ToTable("Group").HasKey(e => e.GroupId);
+            modelBuilder.Entity<User>().ToTable("User");
+            modelBuilder.Entity<User>().HasKey(e => e.UserId);
+            
+
+            modelBuilder.Entity<Group>().ToTable("Group");
+            modelBuilder.Entity<Group>().HasKey(e => e.GroupId);
+
+            modelBuilder.Seed();
         }
     }
 }
